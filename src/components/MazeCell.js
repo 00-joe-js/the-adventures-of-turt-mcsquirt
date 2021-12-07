@@ -14,7 +14,7 @@ const buildClassName = cell => {
 
 export default ({cell, turtlePosition, alfalfaPosition}) => {
   return (
-    <div className={buildClassName(cell).join(' ')}>
+    <div className={buildClassName(cell).join(' ')} style={{backgroundImage: "url(public/images/grass.jpg)"}}>
       { positionsMatch(cell, turtlePosition) ? <Turtle /> : null }
       { positionsMatch(cell, alfalfaPosition) ? <Alfalfa /> : null }
     </div>

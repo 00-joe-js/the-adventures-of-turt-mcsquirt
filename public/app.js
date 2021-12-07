@@ -97,7 +97,7 @@
 	
 	
 	// module
-	exports.push([module.id, "* {\n    box-sizing: border-box;\n  }\n  \n  body {\n    background: #f3f2ff;\n  }\n  \n  #turt-mcsquirt {\n    width: 60px;\n    height: 60px;\n  }\n  #turt-mcsquirt img {\n    width: 100%;\n  }\n  \n  #alfalfa {\n    margin: 0 auto;\n    width: 50px;\n    height: 50px;\n  }\n  #alfalfa img {\n    width: 100%;\n  }\n  \n  #app {\n    text-align: center;\n  }\n  \n  #maze {\n    display: inline-block;\n    padding: 30px;\n  }\n  #maze .maze-row:before, #maze .maze-row:after {\n    display: table;\n    content: \"\";\n    clear: both;\n  }\n  #maze .maze-row .maze-cell {\n    background-image: url(/public/images/grass.jpg);\n    background-size: cover;\n    border-radius: 2px;\n    float: left;\n    width: 60px;\n    height: 60px;\n  }\n  #maze .maze-row .maze-cell.wall-top {\n    border-top: 2px solid black;\n  }\n  #maze .maze-row .maze-cell.wall-bottom {\n    border-bottom: 2px solid black;\n  }\n  #maze .maze-row .maze-cell.wall-left {\n    border-left: 2px solid black;\n  }\n  #maze .maze-row .maze-cell.wall-right {\n    border-right: 2px solid black;\n  }\n  \n  #win {\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100vw;\n    height: 100vh;\n    background: white;\n    margin: 0;\n    text-align: center;\n    font-family: \"Helvetica Neue\";\n    font-size: 52px;\n  }", ""]);
+	exports.push([module.id, "* {\n    box-sizing: border-box;\n  }\n  \n  body {\n    background: #f3f2ff;\n  }\n  \n  #turt-mcsquirt {\n    width: 60px;\n    height: 60px;\n  }\n  #turt-mcsquirt img {\n    width: 100%;\n  }\n  \n  #alfalfa {\n    margin: 0 auto;\n    width: 50px;\n    height: 50px;\n  }\n  #alfalfa img {\n    width: 100%;\n  }\n  \n  #app {\n    text-align: center;\n  }\n  \n  #maze {\n    display: inline-block;\n    padding: 30px;\n  }\n  #maze .maze-row:before, #maze .maze-row:after {\n    display: table;\n    content: \"\";\n    clear: both;\n  }\n  #maze .maze-row .maze-cell {\n    background-size: cover;\n    border-radius: 2px;\n    float: left;\n    width: 60px;\n    height: 60px;\n  }\n  #maze .maze-row .maze-cell.wall-top {\n    border-top: 2px solid black;\n  }\n  #maze .maze-row .maze-cell.wall-bottom {\n    border-bottom: 2px solid black;\n  }\n  #maze .maze-row .maze-cell.wall-left {\n    border-left: 2px solid black;\n  }\n  #maze .maze-row .maze-cell.wall-right {\n    border-right: 2px solid black;\n  }\n  \n  #win {\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100vw;\n    height: 100vh;\n    background: white;\n    margin: 0;\n    text-align: center;\n    font-family: \"Helvetica Neue\";\n    font-size: 52px;\n  }", ""]);
 	
 	// exports
 
@@ -22901,7 +22901,7 @@
 	
 	  return _react2.default.createElement(
 	    'div',
-	    { className: buildClassName(cell).join(' ') },
+	    { className: buildClassName(cell).join(' '), style: { backgroundImage: "url(public/images/grass.jpg)" } },
 	    (0, _utils.positionsMatch)(cell, turtlePosition) ? _react2.default.createElement(_Turtle2.default, null) : null,
 	    (0, _utils.positionsMatch)(cell, alfalfaPosition) ? _react2.default.createElement(_Alfalfa2.default, null) : null
 	  );
