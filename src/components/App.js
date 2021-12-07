@@ -74,6 +74,8 @@ export default class extends Component {
       turtlePosition: this.selectCell(...newPosition)
     });
 
+    return true;
+
   }
 
   render() {

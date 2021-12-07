@@ -22786,6 +22786,8 @@
 	      this.setState({
 	        turtlePosition: this.selectCell.apply(this, _toConsumableArray(newPosition))
 	      });
+	
+	      return true;
 	    }
 	  }, {
 	    key: 'render',
@@ -22925,7 +22927,7 @@
 	  return _react2.default.createElement(
 	    "div",
 	    { id: "turt-mcsquirt" },
-	    _react2.default.createElement("img", { src: "/public/images/turtle.png" })
+	    _react2.default.createElement("img", { src: "public/images/turtle.png" })
 	  );
 	};
 
@@ -22949,7 +22951,7 @@
 	  return _react2.default.createElement(
 	    "div",
 	    { id: "alfalfa" },
-	    _react2.default.createElement("img", { src: "/public/images/alfalfa.png" })
+	    _react2.default.createElement("img", { src: "public/images/alfalfa.png" })
 	  );
 	};
 
@@ -23003,7 +23005,7 @@
 	      null,
 	      "YOU WON!"
 	    ),
-	    _react2.default.createElement("img", { src: "/public/images/werkwerkwerk.gif" })
+	    _react2.default.createElement("img", { src: "public/images/werkwerkwerk.gif" })
 	  );
 	};
 
