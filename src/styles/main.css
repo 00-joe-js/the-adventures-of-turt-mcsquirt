@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #f3f2ff;
+  }
+  
+  #turt-mcsquirt {
+    width: 60px;
+    height: 60px;
+  }
+  #turt-mcsquirt img {
+    width: 100%;
+  }
+  
+  #alfalfa {
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+  }
+  #alfalfa img {
+    width: 100%;
+  }
+  
+  #app {
+    text-align: center;
+  }
+  
+  #maze {
+    display: inline-block;
+    padding: 30px;
+  }
+  #maze .maze-row:before, #maze .maze-row:after {
+    display: table;
+    content: "";
+    clear: both;
+  }
+  #maze .maze-row .maze-cell {
+    background-image: url(/public/images/grass.jpg);
+    background-size: cover;
+    border-radius: 2px;
+    float: left;
+    width: 60px;
+    height: 60px;
+  }
+  #maze .maze-row .maze-cell.wall-top {
+    border-top: 2px solid black;
+  }
+  #maze .maze-row .maze-cell.wall-bottom {
+    border-bottom: 2px solid black;
+  }
+  #maze .maze-row .maze-cell.wall-left {
+    border-left: 2px solid black;
+  }
+  #maze .maze-row .maze-cell.wall-right {
+    border-right: 2px solid black;
+  }
+  
+  #win {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    margin: 0;
+    text-align: center;
+    font-family: "Helvetica Neue";
+    font-size: 52px;
+  }

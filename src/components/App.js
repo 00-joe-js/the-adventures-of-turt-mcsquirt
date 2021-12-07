@@ -10,6 +10,7 @@ export default class extends Component {
     // Description of what this maze array looks like
     // can be found here: https://www.npmjs.com/package/generate-maze
     const maze = mazeGen(15, 10);
+    this.moveTurtle = this.moveTurtle.bind(this);
     this.state = {
       maze,
       turtlePosition: maze[0][0],
@@ -18,6 +19,7 @@ export default class extends Component {
   }
 
   componentDidMount() {
+    window.moveTurt = this.moveTurtle;
     document.addEventListener('keyup', e => {
         e.preventDefault();
         this.moveTurtle(keyToDirection(e.keyCode))
