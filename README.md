@@ -2,6 +2,10 @@
 
 <img src="http://i.imgur.com/HQQNOkW.gif" />
 
+Access the game here: https://00-joe-js.github.io/the-adventures-of-turt-mcsquirt/
+
+OR
+
 `npm start` to run server and Webpack compiler. Access application at `http://localhost:8080`
 
 Help Turt find the alfalfa! You can move Turt with arrow keys, but you can also call `window.moveTurt` from your Dev Tools console with "up", "down", "left", or "right" as an argument.
